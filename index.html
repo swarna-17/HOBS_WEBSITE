@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="    viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+<script src="form.js"></script>
+    <title>VOIDEVSTORE</title>
+    
+</head> 
+<body class="indexBody">
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo-box hue-shift"><p class="logo">VOIDEVSTORE</p></a>
+                <p  class="intro">Welcomes You Dear Customers</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                            <li class="nav-item"><a href="faq.html" class="nav-link">F.A.Q</a></li>
+                            <li class="nav-item"><a  href="signUp.html" class="nav-link">SIGNUP</a></li>
+                            
+                        </ul>
+            </nav>
+        </div>
+    </header>
+    
+<div id="wrapper">
+    <div class="formContainer">
+    <input type="email" placeholder="email here" id="email" class="indexIn">
+    <input type="password" placeholder="password here" id="password" class="indexIn">
+    <div class="buttom-btn hue hue-shift"></div>
+    <button  class="indexButton" onclick="signIn()"  id="signIn">LOGIN</button>
+    <button  class="indexButton" onclick="signOut()" id="signOut">LOGOUT</button>
+    <div class="sm-list">
+        <a href="shopping.html" class="sm-link" id="twitter" onclick="twitterSign()">
+           <i class="fab fa-twitter hue-shift"></i>
+        </a>
+        <a  href="shopping.html" class="sm-link" onclick="instagramSign()">
+            <i class="fab fa-instagram hue-shift"></i>
+         </a>
+         <a href="shopping.html" class="sm-link" onclick="facebookSign()" >
+            <i class="fab fa-facebook-f hue-shift"></i>
+         </a>
+         <a href="#" onclick="googleSign()" class="sm-link">
+            <i class="fab fa-google hue-shift"></i>
+         </a>
+    </div>
+    <div class="anime-image">
+        <div class="image-group hue-shift">
+            <img src="./images/liq-5.PNG" alt="" class="blob-large">
+            <img src="./images/liq-4.PNG" alt="" class="blob-bean">
+        </div>
+        </div>
+</div>
+</div>
+
+  </div>
+
+ 
+</div>
+</section>
+ 
+<img src="./images/liq-1.PNG" alt="" class="blob blob1 hue-shift">
+<img src="./images/liq-2.PNG" alt="" class="blob blob2 hue-shift">
+<img src="./images/liq-3.PNG" alt="" class="blob blob3 hue-shift">
+<img src="./images/liq-6.PNG" alt="" class="blob blob4 hue-shift">
+<div style="font-size: 20px" class="signup hue-shift">
+     
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+#signupwrap{
+   max-width: 500px;
+   margin: auto;
+}
+.signup-users{
+    margin-top: 18rem;
+    opacity: 0.5;
+    backdrop-filter: blur(2rem); 
+}
+.signupBody{
+    overflow: hidden;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right,#3B4679,#2B3153);
+}
+.signUpCred{
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    backdrop-filter: blur(2rem); 
+    text-align: center;
+}
+.signupemail{
+    position: absolute  ; 
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-left: 14rem;
+}
+#UserName{
+    margin-right: 1.8rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+#mobileNo{
+    position: absolute;
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 14rem;
+}
+#Age{
+    position: absolute;
+    border-radius: 2rem;
+    text-align: center;
+    margin-bottom: -4rem;
+    margin-left: 0.4;
+} 
+.signuppassword{
+    position: absolute;
+    margin-right: -13em;
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: 12rem;
+}
+.signupButton{
+    border-radius: 2rem;
+    margin-top: 12.2rem;
+    margin-left: 1.5rem;
+}
+
+.signupButton:hover{
+    background-image: linear-gradient(to right,#a971ff,#00f0ff);
+    color: #fff;
+}
+
+.enter{
+
+    margin-top: -3rem;
+    margin-bottom: -79px;
+    color: white;
+}
+
+
+.hue-shift{
+    animation: hue-shift 5s infinite alternate;
+}
+.blob{
+    position: absolute;
+    z-index: -1;
+}
+.blob1{
+    top: -11rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blob2{
+    top: 15rem;
+    left: -17%;
+}
+.blob3{
+    right: 5rem;
+    bottom: -24rem;
+}
+.blob4{
+    left: -21rem;
+    bottom: -17rem;
+}
+/* Animations */
+@keyframes hue-shift{
+    from{
+         filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg)
+    }
+}

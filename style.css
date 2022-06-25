@@ -1,0 +1,266 @@
+/* header&nav */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.nav{
+    
+    top: 1rem;
+    height: 10rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.nav-list{
+   
+    display: flex;
+    list-style: none;
+}
+.nav-item:last-child{
+   margin-right: 0.8;
+   
+}
+.nav-item{
+margin-top: -7rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+    text-transform: uppercase ;
+    color: white;
+    transition: opacity .3s;
+
+}
+.logo{
+    display: block;
+    width: 8rem;
+}
+.nav-link:hover{
+    opacity: .6;
+
+}
+.nav-item{
+    margin-right: 5rem;
+}
+.logo{
+    position: absolute;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin-top: -8rem;
+}
+/* index page */
+body{
+    overflow: hidden;
+    min-height: 100vh;
+    background: fixed;
+    background: linear-gradient(to bottom right,#3B4679,#2B3153) ;
+}
+.indexButton{
+    border-radius: 2rem;
+    z-index: -1;
+    width: 5rem;
+    opacity: 0.5;
+    backdrop-filter: blur(2rem);    
+}
+#signIn{
+    margin-right: 5rem;
+    margin-left: -20rem;
+}
+.intro{
+   position: absolute;
+   padding-top: 1000px;
+   width: 8rem;
+   font-size: x-large;
+   color: azure;
+   margin-top: 5rem;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: -20rem;
+    
+    z-index: 10000;
+
+}
+#email{
+    margin-top: 25rem;
+
+}
+.indexIn{
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: -20rem;
+    height: 15px;
+    width: 15rem;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.5;
+    z-index: inherit;
+ 
+}
+.formContainer{
+    margin-left: 20rem;
+}
+
+.indexButton:hover
+{
+    background-image: linear-gradient(to right,#a971ff,#00f0ff);
+    transition-duration: 1s;
+    color: #fff;
+}
+#signOut{
+    margin-top: -2.5rem;
+    margin-left: -10rem;
+}
+#signIn{
+    margin-bottom: 20px;
+}
+
+.sm-list{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: -20rem;
+}
+.sm-link{
+ 
+  color: #929fc5;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #929fc5;
+  border-radius: 50%;
+  display: flex;
+  margin-right: 2.5rem;
+  margin-top: 2px;
+  text-decoration: none;
+
+}
+.sm-link i{
+    margin: auto;
+}
+.sm-link:hover{
+    background-image: linear-gradient(to right,#a971ff,#00f0ff);
+    color: #fff;
+}
+
+.signup{
+    margin-left: 35rem;
+    margin-top: 20px;
+    transition: opacity .3s;
+}
+.signup:hover{
+    opacity: 0.6;
+}
+a{
+    color: white;   
+    text-decoration: none;
+}
+
+.blob-large{
+    width: 200px;
+    position: absolute;
+    margin-top: -26rem;
+    margin-left:-16rem;
+    z-index: -300;
+    
+}
+.blob-large{
+    animation: move-up 2s infinite alternate;
+}
+.blob-bean{
+    width: 100px;
+    position: absolute;
+   margin-top: -400px;
+   margin-left: -280px;
+    animation: move-down 2s infinite alternate;
+}
+
+ .hue-shift{
+    animation: hue-shift 5s infinite alternate;
+}
+.blob{
+    position: absolute;
+    z-index: -1;
+}
+.blob1{
+    top: -11rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blob2{
+    top: 15rem;
+    left: -17%;
+}
+.blob3{
+    right: 5rem;
+    bottom: -24rem;
+}
+.blob4{
+    left: -21rem;
+    bottom: -17rem;
+} 
+.landing-page::before{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("./images/bg-pat.png");
+    background-size: cover;
+    opacity: .5;
+    z-index: -1;
+}
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+
+/* animations */
+@keyframes hue-shift{
+    from{
+         filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg)
+    }
+}
+@keyframes move-up{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(1.5rem);
+    }
+}
+@keyframes move-down{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-1.5rem);
+    }
+}
+
+/* mediaquery */
+@media screen and (max-width: 768px){
+   
+    
+    
+}
+@media screen and (max-width: 700px){
+    .blob2{
+        display: none;
+    }
+    .blob3{
+        width: 50%;
+        bottom:-10rem;
+    }
+
+
+}
+
